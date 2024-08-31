@@ -1,7 +1,4 @@
 import customtkinter as ctk
-import os
-import tkinter as tk
-from tkinter import messagebox
 
 # Tkinter pencere oluşturulması
 pencere = ctk.CTk()
@@ -9,7 +6,6 @@ pencere.title("Otomatik Kapatma")
 pencere.geometry("400x300")
 ctk.set_appearance_mode("dark")
 pencere.resizable(False, False)  # Pencereyi yeniden boyutlandırmayı devre dışı bırakma
-
 
 # Başlık
 baslik = ctk.CTkLabel(pencere, text="Otomatik Kapatma", font=("Arial", 18))
@@ -29,17 +25,21 @@ def shutdown():
     global kapatma_emri_verildi
     süre = time_input.get()  # Kullanıcının girdiği süreyi al
     if süre.isdigit():  # Girişin bir sayı olup olmadığını kontrol et
+        import os  # Lazy loading: os modülünü sadece burada yüklüyoruz
         os.system(f"shutdown -s -f -t {süre}")
         kapatma_emri_verildi = True
     else:
+        import tkinter.messagebox as messagebox  # Lazy loading: tkinter.messagebox sadece burada yüklüyoruz
         messagebox.showwarning("Uyarı", "Lütfen geçerli bir sayı girin.")
 
 def iptal():
     global kapatma_emri_verildi
     if kapatma_emri_verildi:
+        import os  # Lazy loading: os modülünü sadece burada yüklüyoruz
         os.system("shutdown -a")
         kapatma_emri_verildi = False
     else:
+        import tkinter.messagebox as messagebox  # Lazy loading: tkinter.messagebox sadece burada yüklüyoruz
         messagebox.showinfo("Uyarı", "Kapatma emri verilmedi!")
 
 # Butonlar
