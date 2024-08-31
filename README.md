@@ -44,7 +44,7 @@ Bu uygulamayı çalıştırmak için aşağıdaki Python kütüphanelerine ihtiy
 
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](screenshot.png)
+![Ekran görüntüsü 2024-08-31 200108](https://github.com/user-attachments/assets/a1e26eb9-1abc-413f-8f42-087cc4c9dc73)
 
 ## Lisans
 
