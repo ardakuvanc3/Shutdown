@@ -13,7 +13,6 @@ Bu proje, belirli bir süre sonra bilgisayarınızı otomatik olarak kapatmanız
 Bu uygulamayı çalıştırmak için aşağıdaki Python kütüphanelerine ihtiyacınız olacak:
 
 - `customtkinter`
-- `tkinter`
 - `os`
 
 ## Kurulum
