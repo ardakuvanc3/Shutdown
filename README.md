@@ -29,6 +29,9 @@ Bu uygulamayı çalıştırmak için aşağıdaki Python kütüphanelerine ihtiy
     ```bash
     pip install customtkinter
     ```
+   ```bash
+    pip install tkinter
+    ```
 
 3. Uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
 
